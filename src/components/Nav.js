@@ -4,7 +4,7 @@ import "../styles/index.css";
 
 function Nav() {
   return (
-    <div style={{background: "#091c29"}}>
+    <div style={{background: "#000000"}}>
       <div className="flex items-center font-mono justify-between w-10/12 mx-auto py-3 text-white">
       <h1 className="text-3xl font-bold">BP</h1>
       <div>

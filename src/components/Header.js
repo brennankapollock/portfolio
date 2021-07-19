@@ -16,7 +16,7 @@ function Header() {
   return (
     <div
       className="min-h-screen flex items-center justify-center"
-      style={{ background: "#091c29" }}
+      style={{ background: "#000000" }}
     >
       <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
       
@@ -38,7 +38,7 @@ function Header() {
           />
         </h1>
         <ScrollLink to="stack" smooth="true">
-        <button className=" animate-float bg-indigo-500 px-10 py-3 text-xl uppercase mt-10 rounded-lg font-bold">{content.header.btnText}</button>
+        <button className=" animate-float bg-indigo-500 px-10 py-3 mb-8 text-xl uppercase mt-10 rounded-lg font-bold">{content.header.btnText}</button>
         </ScrollLink>
       </div>
       </div>
