@@ -45,4 +45,21 @@ export default {
     ],
     desc: `JavaScript ES6, React, Next.js, Node.js, PostgreSQL, Express, PostgreSQL, Mocha/Chai.`,
   },
+  
+  projects: {
+    project: [
+      {
+        name: "Reservational",
+        desc: "lorum",
+      },
+      {
+        name: "Pomodoro Timer",
+        desc: "lorum",
+      },
+      {
+        name: "Grub Dash",
+        desc: "lorum",
+      }
+    ]
+  }
 };
