@@ -3,25 +3,28 @@ import "../styles/index.css";
 import content from "../content";
 
 function Projects(){
+   
 
-
-
+    
 
 
     return (
-        <div className="min-h-screen font-mono flex flex-col items-center justify-center" id="projects" style={{ background: "#000000" }}>
+        <div className="min-h-screen font-mono flex-col flex items-center justify-center" id="projects" style={{ background: "#000000" }}>
             <h1 className="text-5xl font-bold text-white">Projects</h1>
-            <div className="flex items-center">
+            <div className="flex">
                 {content.projects.project.map((project, index) => {
                     return (
-                        <div className="flex-col">
-                        <div className="text-white text-xl flex w-auto h-auto bg-black m-2 items-center p-5 mt-10">
-                            {project.name}
-                        </div>
-                        <button className=" items-center bg-indigo-500 mx-3 px-6 py-3 mb-8 text-md uppercase  rounded-lg font-bold">
+                        <div key={index} className="flex items-center flex-col text-white text-xl  bg-black m-2 p-5 mt-10">
+                            <h2 id={project.name}>{project.name}</h2>
+                           
+                            <a href={project.url}>
+                            <button  className=" bg-indigo-500 mx-3 px-4 mt-8 py-2 mb-8 text-md uppercase rounded-lg font-bold">
                                 Repo
-                            </button>
+                        </button>
+                        </a>
+                        
                         </div>
+                        
                     )
                 })}
             </div>

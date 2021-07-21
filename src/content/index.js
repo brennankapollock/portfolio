@@ -45,20 +45,23 @@ export default {
     ],
     desc: `JavaScript ES6, React, Next.js, Node.js, PostgreSQL, Express, PostgreSQL, Mocha/Chai.`,
   },
-  
+
   projects: {
     project: [
       {
         name: "Reservational",
         desc: "lorum",
+        url: "https://github.com/brennankapollock/reservational",
       },
       {
         name: "Pomodoro Timer",
         desc: "lorum",
+        url: "https://github.com/brennankapollock/Pomodoro-Timer",
       },
       {
         name: "Grub Dash",
         desc: "lorum",
+        url: "https://github.com/brennankapollock/GrubDash",
       }
     ]
   }

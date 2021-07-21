@@ -34,7 +34,7 @@ function Header() {
           <h1
             className={`${
               animated ? "" : "translate-y-10 opacity-0"
-            } transform transition duration-1000 ease-in-outfont-bold text-2xl text-gray-500`}
+            } transform transition duration-1000 ease-in-outfont-bold text-2xl mb-4 text-gray-500`}
           >
             {content.header.text[2]}{" "}
             <Typical
@@ -44,8 +44,13 @@ function Header() {
             />
           </h1>
           <ScrollLink to="stack" smooth="true">
-            <button className=" animate-float bg-indigo-500 px-10 py-3 mb-8 text-xl uppercase mt-10 rounded-lg font-bold">
-              {content.header.btnText}
+            <button className=" animate-float bg-indigo-500  px-10 py-3 mb-8 text-xl uppercase mt-12 rounded-lg font-bold">
+              Stack
+            </button>
+          </ScrollLink>
+          <ScrollLink to="projects" smooth="true">
+            <button className=" animate-float bg-indigo-500 px-10 mx-4 py-3 mb-8 text-xl uppercase mt-12 rounded-lg font-bold">
+              Projects
             </button>
           </ScrollLink>
         </div>
