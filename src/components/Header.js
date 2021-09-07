@@ -1,5 +1,4 @@
 import "../styles/index.css";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import content from "../content";
 import Typical from "react-typical";
 import { useEffect, useState } from "react";
@@ -13,19 +12,13 @@ function Header() {
   }, []);
 
   return (
-    <div
-      className="min-h-screen flex items-center justify-center"
-      style={{ background: "#000000" }}
-    >
-      <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
-        <div className="w-full md:w-2/5">
-          <LazyLoadImage src={content.header.img} effect="blur" />
-        </div>
-        <div className="text-white inline-block font-mono font-bold text-center md:text-left">
+    <div className="min-h-screen flex items-center justify-center bg-special  ">
+      <div className=" mx-auto  md:flex-row-reverse ">
+        <div className="text-black font-averio font-bold text-center mb-10  ">
           <h2
             className={`${
               animated ? "" : "translate-y-10 opacity-0"
-            } transform transition duration-1000 ease-in-out text-3xl md:text-5xl font-bold"`}
+            } transform transition duration-1000 ease-in-out text-3xl md:text-5xl font-bold`}
           >
             {content.header.text[0]}
             <br />
@@ -34,7 +27,7 @@ function Header() {
           <h1
             className={`${
               animated ? "" : "translate-y-10 opacity-0"
-            } transform transition duration-1000 ease-in-outfont-bold text-2xl mb-4 text-gray-500`}
+            } transform transition duration-1000 ease-in-outfont-bold text-2xl mb-4 text-black mt-6`}
           >
             {content.header.text[2]}{" "}
             <Typical
@@ -43,16 +36,23 @@ function Header() {
               className="inline-block"
             />
           </h1>
-          <ScrollLink to="stack" smooth="true">
-            <button className=" animate-float bg-indigo-500  px-10 py-3 mb-8 text-xl uppercase mt-12 rounded-lg font-bold">
-              Stack
-            </button>
-          </ScrollLink>
-          <ScrollLink to="projects" smooth="true">
-            <button className=" animate-float bg-indigo-500 px-10 mx-4 py-3 mb-8 text-xl uppercase mt-12 rounded-lg font-bold">
-              Projects
-            </button>
-          </ScrollLink>
+          <div className="flex mb-4 mt-18 justify-center">
+            <ScrollLink to="stack" smooth="true">
+              <button className="  bg-black text-white  px-4 mx-1 py-3 mb-8 text-xl uppercase mt-12 rounded-lg ">
+                Stack
+              </button>
+            </ScrollLink>
+            <ScrollLink to="projects" smooth="true">
+              <button className="  bg-black text-white  px-6 mx-4 py-3 mb-8 text-xl uppercase mt-12 rounded-lg ">
+                Projects
+              </button>
+            </ScrollLink>
+            <ScrollLink to="about" smooth="true">
+              <button className="  bg-black text-white  px-4 mx-1 py-3 mb-8 text-xl uppercase mt-12 rounded-lg ">
+                About
+              </button>
+            </ScrollLink>
+          </div>
         </div>
       </div>
     </div>
@@ -60,3 +60,10 @@ function Header() {
 }
 
 export default Header;
+
+//animated blob elements to be used in another project. i learned more keyframe utilities doing this.
+{
+  /* <div className="bg-yellow-300 absolute w-64 h-64 p-40 mx-40 -my-8  rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000 "></div>
+<div className="bg-pink-300 absolute w-64 h-64  p-40 -my-8 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob "></div>
+ <div className="bg-purple-300 absolute w-64 h-64 p-40 mx-20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000 "></div> */
+}
