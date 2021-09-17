@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 export default {
   nav: {
     logo: "BP",
@@ -13,6 +14,7 @@ export default {
     text: ["hello world.", "my name is brennan.", "I am a "],
     typical: ["software engineer.", 2000, "poet.", 2000, "philosopher.", 2000],
     btnText: "Scroll Down",
+    head: process.env.PUBLIC_URL + "/assets/head.png",
   },
 
   stack: {

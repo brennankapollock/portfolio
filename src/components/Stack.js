@@ -6,7 +6,6 @@ function Stack() {
   return (
     <div
       className="min-h-screen font-averio  flex flex-col items-center justify-center bg-special"
-      bg-special
       id="stack"
     >
       <h1 className="text-5xl font-bold">Stack</h1>
