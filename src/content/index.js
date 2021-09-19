@@ -14,7 +14,7 @@ export default {
     text: ["hello world.", "my name is brennan.", "I am a "],
     typical: ["software engineer.", 2000, "poet.", 2000, "philosopher.", 2000],
     btnText: "Scroll Down",
-    head: process.env.PUBLIC_URL + "/assets/head.png",
+    head: process.env.PUBLIC_URL + "/assets/headshot.jpeg",
   },
 
   stack: {
@@ -29,7 +29,7 @@ export default {
         alt: "react",
       },
       {
-        img: process.env.PUBLIC_URL + "/assets/express.png",
+        img: process.env.PUBLIC_URL + "/assets/express.jpeg",
         alt: "express",
       },
       {

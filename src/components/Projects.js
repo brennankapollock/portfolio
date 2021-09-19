@@ -5,7 +5,7 @@ import content from "../content";
 function Projects() {
   return (
     <div
-      className="min-h-screen font-averio  flex flex-col items-center justify-center bg-special"
+      className="min-h-screen font-averio  flex flex-col items-center justify-center "
       id="projects"
     >
       <h1 className="text-5xl font-bold text-black">Projects</h1>

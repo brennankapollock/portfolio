@@ -66,12 +66,13 @@
 /* <div className="bg-yellow-300 absolute w-64 h-64 p-40 mx-40 -my-8  rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000 "></div>
 <div className="bg-pink-300 absolute w-64 h-64  p-40 -my-8 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob "></div>
  <div className="bg-purple-300 absolute w-64 h-64 p-40 mx-20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000 "></div> */
-
+import React from "react";
 import "../styles/index.css";
 import content from "../content";
 import Typical from "react-typical";
 import { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import ParticlesBg from "particles-bg";
 
 function Header() {
   const [animated, setAnimated] = useState(false);
@@ -81,7 +82,9 @@ function Header() {
   }, []);
 
   return (
-    <div className="min-h-screen flex md:justify-start justify-center items-center bg-gradient-r-red ">
+    <div className="min-h-screen flex md:justify-start justify-center items-center   ">
+      <ParticlesBg type="cobweb" num={80} bg={true} />
+
       <div className="text-black font-averio font-bold md:text-left text-center md:mx-24 ">
         <h2
           className={`${
@@ -141,8 +144,8 @@ function Header() {
 export default Header;
 
 //Possible terminal UI to add into the portfolio.
-{
-  /* <div className="pl-64 mb-8 mt-56">
+
+/* <div className="pl-64 mb-8 mt-56">
         <Terminal
           color="white"
           backgroundColor="black"
@@ -168,4 +171,3 @@ export default Header;
           msg="You can write anything here. Example - Hello! My name is Foo and I like Bar."
         />
       </div> */
-}

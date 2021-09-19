@@ -5,7 +5,7 @@ import content from "../content";
 function About() {
   return (
     <div
-      className="min-h-screen font-mono flex flex-col items-center justify-center bg-special"
+      className="min-h-screen font-mono flex flex-col items-center justify-center "
       id="about"
     >
       <h1 className="text-5xl font-bold text-black">Who Am I?</h1>
