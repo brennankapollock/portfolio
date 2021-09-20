@@ -19,6 +19,7 @@ export default {
 
   stack: {
     title: "Stack",
+    carbon: process.env.PUBLIC_URL + "/assets/carbon.png",
     tech: [
       {
         img: process.env.PUBLIC_URL + "/assets/postgres.png",
