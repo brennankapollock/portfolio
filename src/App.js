@@ -1,17 +1,17 @@
-import "./styles/index.css"
-import Nav from "./components/Nav"
+import "./styles/index.css";
 import Header from "./components/Header";
 import Stack from "./components/Stack";
 import Projects from "./components/Projects";
-
+import About from "./components/About";
 
 function App() {
   return (
     <div>
-    <Nav/>
-    <Header/>
-    <Stack/>
-    <Projects/>
+      <Header />
+
+      <Stack />
+      <Projects />
+      <About />
     </div>
   );
 }
