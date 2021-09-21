@@ -20,6 +20,7 @@
     "react-terminal-component": "^1.5.0",
     "react-terminal-ui": "^0.1.14",
     "react-typical": "^0.1.3",
+    "responsive-react": "^5.0.0",
     "socket.io": "^4.2.0",
     "tailwindcss-border-gradients": "^2.0.3",
     "tailwindcss-gradients": "^3.0.0",
