@@ -15,68 +15,76 @@ function Header() {
 
   return (
     <div>
-      <div className="min-h-screen flex md:justify-start justify-center items-center   ">
-        <ParticlesBg type="cobweb" num={80} bg={true} />
+      <div className=" min-h-screen flex  flex-wrap-reverse justify-center items-center">
+        <div className=" ">
+          <ParticlesBg type="cobweb" num={80} bg={true} />
 
-        <div className="text-black font-averio font-bold md:text-left text-center md:mx-24 ">
-          <h2
-            className={`${
-              animated ? "" : "translate-y-10 opacity-0"
-            } transform transition duration-1000 ease-in-out text-3xl md:text-5xl font-bold`}
-          >
-            {content.header.text[0]}
-            <br />
-            {content.header.text[1]}
-          </h2>
-          <h1
-            className={`${
-              animated ? "" : "translate-y-10 opacity-0"
-            } transform transition duration-1000 ease-in-outfont-bold text-2xl  text-black mt-6`}
-          >
-            {content.header.text[2]}{" "}
-            <Typical
-              steps={content.header.typical}
-              loop={Infinity}
-              className="inline-block"
-            />
-          </h1>
+          <div className="text-black font-averio font-bold lg:text-left text-center md:mx-24 ">
+            <h2
+              className={`${
+                animated ? "" : "translate-y-10 opacity-0"
+              } transform transition duration-1000 ease-in-out text-3xl lg:text-5xl font-bold`}
+            >
+              {content.header.text[0]}
+              <br />
+              {content.header.text[1]}
+            </h2>
+            <h1
+              className={`${
+                animated ? "" : "translate-y-10 opacity-0"
+              } transform transition duration-1000 ease-in-outfont-bold text-2xl  text-black mt-6`}
+            >
+              {content.header.text[2]}{" "}
+              <Typical
+                steps={content.header.typical}
+                loop={Infinity}
+                className="inline-block"
+              />
+            </h1>
 
-          <div className="flex md:justify-start justify-center">
-            <ScrollLink
-              to="stack"
-              smooth="true"
-              className="  bg-black text-white  px-4 mx-1 py-3 mb-8 text-xl  mt-12  transition delay-75 duration-75 ease-in-out transform hover:-translate-y-2 hover:-translate-x-2  "
-            >
-              <button>Stack</button>
-            </ScrollLink>
-            <ScrollLink
-              to="projects"
-              smooth="true"
-              className="  bg-black text-white  px-6 mx-4 py-3 mb-8 text-xl  mt-12 transition delay-75 duration-75 ease-in-out transform hover:-translate-y-2 hover:-translate-x-2  "
-            >
-              <button>Projects</button>
-            </ScrollLink>
-            <ScrollLink
-              to="about"
-              smooth="true"
-              className="  bg-black text-white  px-4 mx-1 py-3 mb-8 text-xl mt-12 transition delay-75 duration-75 ease-in-out transform hover:-translate-y-2 hover:-translate-x-2  "
-            >
-              <button>About</button>
-            </ScrollLink>
-          </div>
-          <div className="flex justify-center md:justify-start md:-mx-2    ">
-            <a href="https://www.linkedin.com/in/brennanpollock/">
-              <span className="fab fa-linkedin text-4xl px-2 mx-1 py-3 mb-8 "></span>
-            </a>
-            <a href="https://github.com/brennankapollock">
-              <span className="fab fa-github text-4xl px-4 mx-4 py-3 mb-8  "></span>
-            </a>
-            <a href="https://twitter.com/hootscootboogie">
-              <span className="fab fa-twitter text-4xl px-2 mx-1 py-3 mb-8 "></span>
-            </a>
+            <div className="flex lg:justify-start justify-center">
+              <ScrollLink
+                to="stack"
+                smooth="true"
+                className="  bg-black text-white  px-4 mx-1 py-3 mb-8 text-xl  mt-12  transition delay-75 duration-75 ease-in-out transform hover:-translate-y-2 hover:-translate-x-2  "
+              >
+                <button>Stack</button>
+              </ScrollLink>
+              <ScrollLink
+                to="projects"
+                smooth="true"
+                className="  bg-black text-white  px-6 mx-4 py-3 mb-8 text-xl  mt-12 transition delay-75 duration-75 ease-in-out transform hover:-translate-y-2 hover:-translate-x-2  "
+              >
+                <button>Projects</button>
+              </ScrollLink>
+              <ScrollLink
+                to="about"
+                smooth="true"
+                className="  bg-black text-white  px-4 mx-1 py-3 mb-8 text-xl mt-12 transition delay-75 duration-75 ease-in-out transform hover:-translate-y-2 hover:-translate-x-2  "
+              >
+                <button>About</button>
+              </ScrollLink>
+            </div>
+            <div className="flex justify-center lg:justify-start lg:-mx-2">
+              <a href="https://www.linkedin.com/in/brennanpollock/">
+                <span className="fab fa-linkedin text-4xl px-2 mx-1 py-3 mb-8 "></span>
+              </a>
+              <a href="https://github.com/brennankapollock">
+                <span className="fab fa-github text-4xl px-4 mx-4 py-3 mb-8  "></span>
+              </a>
+              <a href="https://twitter.com/hootscootboogie">
+                <span className="fab fa-twitter text-4xl px-2 mx-1 py-3 mb-8 "></span>
+              </a>
+            </div>
           </div>
         </div>
+
+        <img
+          className="w-1/4 lg:ml-32 lg:mb-12 rounded-full -mb-32 "
+          src={content.header.me}
+        />
       </div>
+
       <div className="overflow-hidden ">
         <svg
           preserveAspectRatio="none"

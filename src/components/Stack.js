@@ -42,9 +42,11 @@ function Stack() {
               <li className="my-8 border border-double border-2 border-white p-2 ">
                 React
               </li>
+
               <li className="my-8 border border-double border-2 border-white p-2">
                 Express
               </li>
+
               <li className="my-8 border border-double border-2 border-white p-2">
                 Node
               </li>

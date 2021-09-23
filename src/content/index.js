@@ -15,6 +15,7 @@ export default {
     typical: ["software engineer.", 2000, "poet.", 2000, "philosopher.", 2000],
     btnText: "Scroll Down",
     head: process.env.PUBLIC_URL + "/assets/headshot.jpeg",
+    me: process.env.PUBLIC_URL + "/assets/transpar-me.png",
   },
 
   stack: {
