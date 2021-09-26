@@ -80,7 +80,7 @@ function Header() {
         </div>
 
         <img
-          className="w-1/4 lg:ml-32 lg:mb-12 rounded-full -mb-32 "
+          className="w-1/4 lg:ml-32 lg:mb-12 rounded-full  md:-mb-32  "
           src={content.header.me}
         />
       </div>
