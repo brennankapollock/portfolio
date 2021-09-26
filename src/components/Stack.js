@@ -9,7 +9,7 @@ Aos.init();
 function Stack() {
   return (
     <div
-      className="min-h-screen font-averio flex justify-center items-center  bg-black text-white"
+      className="min-h-screen font-averio flex justify-center items-center  bg-black text-white overflow-x-hidden"
       id="stack"
     >
       <Responsive displayIn={["Laptop"]}>
